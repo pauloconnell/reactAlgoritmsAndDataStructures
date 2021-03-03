@@ -1,32 +1,43 @@
-const React = require('react');
-
+const React = require("react");
 
 const Set = function(props) {
-  
-  
   return (
-  <div>
-    <h2> Data Structure:</h2><h1>Set</h1>
-    Set is like an array but with NO duplicate elements.<br/>
-    
-      Constructor:
-      let mySet = new Set();
-      
-      It has the following methods:
-      mySet.add(value)
-        appends value to the Set and returns the new Set
-      mySet.clear()
-        removes ALL elements from the set
-      mySet.delete(value)
-        removes value and returns true or false for success/fail
-      mySet.has(value)
-        returns true if value in Set/false if not
-      Iteration Methods:
-      mySet.keys()
-      mySet.values()
-      mySet.entries()
-      mySet.forEach(callback[,thisArg])
-  
+    <div>
+      <h2> Data Structure:</h2>
+      <h1>Set</h1>
+      <b>Set is like an array but with NO duplicate elements.</b>
+      <br />
+      <button onClick={e => props.handleSet(e)}>Click Me</button>
+      {props.showSet ? (
+        <div>
+          <h3>Constructor:</h3>
+          let mySet = new Set(); It has the following <strong>methods:</strong>
+          <br />
+          <code>mySet.add(value)</code>
+          <br></br>
+          appends value to the Set and returns the new Set<br></br>
+          <code>mySet.clear()</code>
+          <br></br>
+          removes ALL elements from the set<br></br>
+          <code>mySet.delete(value)</code>
+          <br></br>
+          removes value and returns true or false for success/fail<br></br>
+          <code>mySet.has(value)</code>
+          <br></br>
+          returns true if value in Set/false if not<br></br>
+          Iteration Methods:<br></br>
+          <code>mySet.keys()</code>
+          <br></br>
+          <code>mySet.values()</code>
+          <br></br>
+          <code>mySet.entries()</code>
+          <br></br>
+          <code>mySet.forEach(callback[,thisArg])</code>
+          <br></br>
+        </div>
+      ) : (
+        `Click button to show details`
+      )}
     </div>
   );
 };
