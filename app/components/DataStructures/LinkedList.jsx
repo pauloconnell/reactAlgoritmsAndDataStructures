@@ -16,44 +16,53 @@ const LinkedList = function(props) {
       {props.showLinkedList ? (
         <div>
           <h3>Convergance of 2 linked lists:</h3>
+          <pre>
           <code>var getIntersectionNode = function(headA, headB)</code>
           <br />
-          Check if either head is null, if so no intersection:
+          -Check if either head is null, if so no intersection:
           <br />
           <code>if(headA===null|| headB===null) return null;</code>
           <br />
-          Set pointers to represent each linked list: <br />
+          -Set pointers to represent each linked list: <br />
           <code>
-            var pointerA=headA;
+             var pointerA=headA;
             <br />
-            var pointerB=headB;
+             var pointerB=headB;
           </code>
           <br />
-          to even odd lengths of lists, once pointer reaches end, start at other
+          -to even odd lengths of lists, once pointer reaches end, start at other
           list, will = 2nd run thru loop
           <br />
           <code>
-            while(pointerA!==pointerB) // deep !equals to ensure exact same node{" "}
+            while(pointerA!==pointerB)<br/> 
+            - deep !equals to ensure exact same node{" "}
             <br />
             pointerA=pointerA.next;
             <br />
             pointerB=pointerB.next;
             <br />
+          
             if(pointerA === pointerB)
             <br />
-            return pointerA; // on second loop, if no match, pointerA will ==
-            pointerB=== null
+            return pointerA; <br />
+            -on second loop, if no match, pointerA will ==pointerB=== null
+             
             <br />
+          
             if(pointerA ===null)
             <br />
             pointerA=headB;
             <br />
+            
             if(pointerB ===null)
             <br />
             pointerB=headA;
             <br />
             return pointerA; <br />
+             
+            
           </code>
+            </pre>
           <br></br>
         </div>
       ) : (
