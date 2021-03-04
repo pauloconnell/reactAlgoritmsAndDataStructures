@@ -1,6 +1,7 @@
 const React = require("react");
 
 const Array = function(props) {
+  let code="{ a - b}";  // curly brackets cause problems in JSX, so just use variable 
   return (
     <div>
       <h2> Data Structure:</h2>
@@ -14,13 +15,20 @@ const Array = function(props) {
       <button onClick={e => props.handleArray(e)}>Click Me</button>
       {props.showArray ? (
         <div>
-          <h3>string sort:</h3>
-          <code>array.sort();</code>
+          <h3>String sort(default):</h3>
+          <code>let sortedAlphabetically=array.sort();</code>
           <br />
           <h3>Numerical sort:</h3>
           <h4>
-            <code>array.sort(function(a, b)&#123return a - b&#125)</code>
+            <code>let sortedNumberArray=array.sort(function(a, b){code})</code>
           </h4>
+          <br />
+           <h3>Finding Array Max and Min values:</h3>
+          <code>var min=Math.min(arr);</code>
+          <br />
+          <code>var max=Math.max(arr);</code>
+          <br />
+          
         </div>
       ) : (
         `Click button to show details`
