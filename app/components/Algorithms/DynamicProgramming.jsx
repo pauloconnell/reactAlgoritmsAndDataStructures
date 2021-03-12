@@ -19,31 +19,34 @@ const DynamicProgramming = function(props) {
             <br />
           </h4>
           <h3>
-            Minimum number of Coins
+            Minimum number of Coins:
+            <br />
             <br />
             Given coins of values coins[] find smallest amount of coins to make
             AMOUNT
           </h3>
           <div>
-            dp holds the solutions of the min number of coins needed to make the
-            number i which i is also the index <br />
-            make Dp array as big as the amount <br />
-            initiallize each position with XL number of amount+1(used below)
+            Dp[index] holds the solutions of the min number of coins needed to make
+            the value of index <br />
+            make Dp.length as big as the amount so a space for each number as we build our way up to the final answer <br />
+            
             <br />
-            dp at 0 is 0 Must be defined
+            initiallize each position in Dp with XL number of amount+1 as we compare
+            to lowest number later
             <br />
-            and any spots where i is not solvable for coins, will have XL number
-            in it
+            Dp at 0 is 0
+            <br />
+           
             <br />
             basicly double traversal through dp array and coins array
             <br />
-            iterate from zero i to the amount <br />
-            iterate from zero y to the coins.length <br />
+            iterate Dp from zero i to the amount <br />
+            iterate coins[] from zero y to the coins.length <br />
             check if(coins[y] Less than i) Means we can use one of these coins
             <br />
             dp[i]=Math.min(dp[i], 1+dp[i-coins[y]]); this location is the
-            smaller of dp[i] or 1 more than the result at one coin ago <br />
-            remaining =remaining-coins[y]; <br />
+            smaller of dp[i] or 1 more than the result at one coin (coin[y]) ago <br />
+            <br />
             <br />
             <br />
             We set the empty locations to XL number (to not interfere with our
@@ -52,7 +55,9 @@ const DynamicProgramming = function(props) {
             return dp[amount] GreaterThan amount?-1:dp[amount]; <br />
           </div>
 
-        <a href="https://www.tutorialspoint.com/data_structures_algorithms/dynamic_programming.htm" >This is a great resource for DP</a>
+          <a href="https://www.tutorialspoint.com/data_structures_algorithms/dynamic_programming.htm">
+            This is a great resource for DP
+          </a>
           <br />
         </div>
       ) : (
