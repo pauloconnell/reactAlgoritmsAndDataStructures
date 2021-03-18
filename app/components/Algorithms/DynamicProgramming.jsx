@@ -45,8 +45,10 @@ const DynamicProgramming = function(props) {
             check if(coins[y] Less than i) Means we can use one of these coins
             <br />
             dp[i]=Math.min(dp[i], 1+dp[i-coins[y]]); this location is the
-            smaller of dp[i] or 1 more than the result at one coin (coin[y]) ago <br />
+            smaller of itself(dp[i]) or 1 more than the result at one coin (coin[y]) ago  <br />
+            This is why we initialize dp[] with XL number
             <br />
+            This will populate dp with least coins for every index possible or leave as is( XL # = amount+1)
             <br />
             <br />
             We set the empty locations to XL number (to not interfere with our
