@@ -4,7 +4,7 @@ const Set = require("./DataStructures/Set");
 const Array = require("./DataStructures/Array");
 const LinkedList = require("./DataStructures/LinkedList");
 const DynamicProgramming = require("./Algorithms/DynamicProgramming");
-
+const RandomPointInCircle= require("./CodingChallenges/RandomPointInCircle");
 /* the main page for the index route of this app */
 class MainApp extends React.Component {
   constructor(props) {
@@ -60,6 +60,7 @@ class MainApp extends React.Component {
           showDp={this.state.showDp}
           handleDp={e => this.handleDp(e)}
         />
+        <RandomPointInCircle />
         </center>
       </div>
     );

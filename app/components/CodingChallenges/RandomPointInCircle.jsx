@@ -1,0 +1,73 @@
+const React = require("react");
+
+const RandomPointInCircle = function(props) {
+  let code = "{ a - b}"; // curly brackets cause problems in JSX, so just use variable
+  let showThis = true;
+  const handleClick = () => {
+    showThis = !showThis;
+  };
+  return (
+    <div>
+      <h2> Coding Challenge</h2>
+      <h1>Random point in cirlce</h1>
+      <h2>Given radius, x_center, y_center</h2>
+      Return a random generated point in this circle
+      <br />
+      <button
+        onClick={() => {
+          handleClick();
+        }}
+      >
+        Click Me
+      </button>
+      {showThis ? (
+        <div>
+          <h3>Random point in Circle:</h3>
+
+          <h3>
+            <br />
+            <br />
+            randPoint () returns a size 2 array containing x-position and
+            y-position of the random point, in that order. Example 1: Input:
+            ["Solution","randPoint","randPoint","randPoint"] [[1,0,0],[],[],[]]
+            Output:
+            [null,[-0.72939,-0.65505],[-0.78502,-0.28626],[-0.83119,-0.19803]]
+          </h3>
+          <div>
+            <br />
+            <code >
+              var Solution = function(radius, x_center, y_center) <br />
+              this.radius=radius; <br />
+              this.x_center=x_center; <br />
+              this.y_center=y_center;<br />
+              
+              <br />
+              <br />
+              Solution.prototype.randPoint =function() //generates rand # that
+              could create point outside <br />
+              circle depending on y value vise versa x value // keeps looking{" "}
+              <br />
+              until it finds a random point in the circle <br />
+              while(true) <br />
+              let x_random=(2*Math.random()-1)*this.radius; //num between 1 and
+              -1 <br />
+              let y_random=(2*Math.random()-1)*this.radius; <br />
+              let x=this.x_center+x_random; let y=this.y_center+y_random; <br />
+              console.log(x_diff,x,y); <br />
+              //Pythag: x**2 + y**2 = distance==r**2 <br />
+              //if distance GreaterThan r**2 point==outside circle <br />
+              let distance=(x-this.x_center)**2+(y-this.y_center)**2;
+              if(distance <br />
+              LessThan=this.radius**2) return [x,y]; <br />
+            </code>
+          </div>
+
+          <br />
+        </div>
+      ) : (
+        `Click button to show details`
+      )}
+    </div>
+  );
+};
+module.exports = RandomPointInCircle;
