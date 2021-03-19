@@ -4,7 +4,8 @@ const Set = require("./DataStructures/Set");
 const Array = require("./DataStructures/Array");
 const LinkedList = require("./DataStructures/LinkedList");
 const DynamicProgramming = require("./Algorithms/DynamicProgramming");
-const RandomPointInCircle= require("./CodingChallenges/RandomPointInCircle");
+const RandomPointInCircle = require("./CodingChallenges/RandomPointInCircle");
+
 /* the main page for the index route of this app */
 class MainApp extends React.Component {
   constructor(props) {
@@ -44,23 +45,34 @@ class MainApp extends React.Component {
   }
   render() {
     return (
-      <div><center>
-        <h1>React App</h1>
-        <h2> Components added for Key algorithms and Data Structures</h2>
-        <Set showSet={this.state.showSet} handleSet={e => this.handleSet(e)} />
-        <Array
-          showArray={this.state.showArray}
-          handleArray={e => this.handleArray(e)}
-        />
-        <LinkedList
-          showLinkedList={this.state.showLinkedList}
-          handleLinkedList={e => this.handleLinkedList(e)}
-        />
-        <DynamicProgramming
-          showDp={this.state.showDp}
-          handleDp={e => this.handleDp(e)}
-        />
-        <RandomPointInCircle />
+      <div>
+        <center>
+          <h1>React App</h1>
+
+          <h2> React Components added for each: </h2>
+          <div style={{ backgroundColor: "lightBlue" }}>
+            <Set
+              showSet={this.state.showSet}
+              handleSet={e => this.handleSet(e)}
+            />
+            <Array
+              showArray={this.state.showArray}
+              handleArray={e => this.handleArray(e)}
+            />
+            <LinkedList
+              showLinkedList={this.state.showLinkedList}
+              handleLinkedList={e => this.handleLinkedList(e)}
+            />
+          </div>
+          <div style={{ backgroundColor: "green" }}>
+            <DynamicProgramming
+              showDp={this.state.showDp}
+              handleDp={e => this.handleDp(e)}
+            />
+          </div>
+          <div class="orange">
+            <RandomPointInCircle />
+          </div>
         </center>
       </div>
     );

@@ -1,11 +1,27 @@
 const React = require("react");
 
-const RandomPointInCircle = function(props) {
-  let code = "{ a - b}"; // curly brackets cause problems in JSX, so just use variable
-  let showThis = true;
-  const handleClick = () => {
-    showThis = !showThis;
+class RandomPointInCircle extends React.Component {
+  //let code = "{ a - b}"; // curly brackets cause problems in JSX, so just use variable
+  //let showThis = true;
+  
+    constructor(props) {
+    super(props);
+
+    this.state = {
+      showThis: false
+    };
+      this.handleClick = this.handleClick.bind(this); 
+  }
+
+  
+  handleClick (){
+     this.setState({
+      showThis: !this.state.showThis
+     });
+    console.log("handled ", this.state.showThis);
   };
+  
+  render(){
   return (
     <div>
       <h2> Coding Challenge</h2>
@@ -14,13 +30,15 @@ const RandomPointInCircle = function(props) {
       Return a random generated point in this circle
       <br />
       <button
-        onClick={() => {
-          handleClick();
+        onClick={(e) => {
+          this.handleClick();
+          console.log("clicked",e.target)
         }}
       >
         Click Me
       </button>
-      {showThis ? (
+      {this.state.showThis}
+      {this.state.showThis ? (
         <div>
           <h3>Random point in Circle:</h3>
 
@@ -35,12 +53,12 @@ const RandomPointInCircle = function(props) {
           </h3>
           <div>
             <br />
-            <code >
+            <code>
               var Solution = function(radius, x_center, y_center) <br />
               this.radius=radius; <br />
               this.x_center=x_center; <br />
-              this.y_center=y_center;<br />
-              
+              this.y_center=y_center;
+              <br />
               <br />
               <br />
               Solution.prototype.randPoint =function() //generates rand # that
@@ -70,4 +88,5 @@ const RandomPointInCircle = function(props) {
     </div>
   );
 };
+  }
 module.exports = RandomPointInCircle;
