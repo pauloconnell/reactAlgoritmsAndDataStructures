@@ -50,6 +50,7 @@ class MainApp extends React.Component {
           <h1>React App</h1>
 
           <h2> React Components added for each: </h2>
+        </center>
           <div style={{ backgroundColor: "lightBlue" }}>
             <Set
               showSet={this.state.showSet}
@@ -73,7 +74,7 @@ class MainApp extends React.Component {
           <div class="orange">
             <RandomPointInCircle />
           </div>
-        </center>
+
       </div>
     );
   }
