@@ -5,6 +5,7 @@ const Array = require("./DataStructures/Array");
 const LinkedList = require("./DataStructures/LinkedList");
 const DynamicProgramming = require("./Algorithms/DynamicProgramming");
 const RandomPointInCircle = require("./CodingChallenges/RandomPointInCircle");
+const DepthFirstSearch = require("./Algorithms/DepthFirstSearch");
 
 /* the main page for the index route of this app */
 class MainApp extends React.Component {
@@ -51,30 +52,30 @@ class MainApp extends React.Component {
 
           <h2> React Components added for each: </h2>
         </center>
-          <div style={{ backgroundColor: "lightBlue" }}>
-            <Set
-              showSet={this.state.showSet}
-              handleSet={e => this.handleSet(e)}
-            />
-            <Array
-              showArray={this.state.showArray}
-              handleArray={e => this.handleArray(e)}
-            />
-            <LinkedList
-              showLinkedList={this.state.showLinkedList}
-              handleLinkedList={e => this.handleLinkedList(e)}
-            />
-          </div>
-          <div style={{ backgroundColor: "green" }}>
-            <DynamicProgramming
-              showDp={this.state.showDp}
-              handleDp={e => this.handleDp(e)}
-            />
-          </div>
-          <div class="orange">
-            <RandomPointInCircle />
-          </div>
-
+        <div style={{ backgroundColor: "lightBlue" }}>
+          <Set
+            showSet={this.state.showSet}
+            handleSet={e => this.handleSet(e)}
+          />
+          <Array
+            showArray={this.state.showArray}
+            handleArray={e => this.handleArray(e)}
+          />
+          <LinkedList
+            showLinkedList={this.state.showLinkedList}
+            handleLinkedList={e => this.handleLinkedList(e)}
+          />
+        </div>
+        <div style={{ backgroundColor: "green" }}>
+          <DynamicProgramming
+            showDp={this.state.showDp}
+            handleDp={e => this.handleDp(e)}
+          />
+          <DepthFirstSearch />
+        </div>
+        <div class="orange">
+          <RandomPointInCircle />
+        </div>
       </div>
     );
   }
