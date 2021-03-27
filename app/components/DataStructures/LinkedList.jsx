@@ -29,9 +29,9 @@ const LinkedList = function(props) {
             <br />
              var pointerB=headB;
           </code>
-          <br />
+          <br /><b>
           -to even odd lengths of lists, once pointer reaches end, start at other
-          list, will = 2nd run thru loop
+          list, will = 2nd run thru loop</b>
           <br />
           <code>
             while(pointerA!==pointerB)<br/> 

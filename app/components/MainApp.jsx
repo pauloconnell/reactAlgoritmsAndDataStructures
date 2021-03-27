@@ -48,7 +48,7 @@ class MainApp extends React.Component {
     return (
       <div>
         <center>
-          <h1>React App</h1>
+          <h1>Coding Challenge Summary: React App</h1>
 
           <h2> React Components added for each: </h2>
         </center>
