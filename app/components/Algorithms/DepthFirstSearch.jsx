@@ -38,29 +38,52 @@ class DepthFirstSearch extends React.Component {
           <div>
             <center>
               <h3>Depth First Search:</h3>
-
+              Associated with
               <h4>Used for Binary Tree traversals</h4>
             </center>
             <h5>
               Pre-order
               <br />
             </h5>
-            1.Visit node <br/>
-            2.traverse left<br/>
-            3.traverse right Use recursion to solve
-            these problems:<br/>
+            1.Visit node <br />
+            2.traverse left
+            <br />
+            3.traverse right <br />
+            Use recursion to solve these problems:
+            <br />
             <code>
-              let preOrder=function(node) <br/>
-              if node==null then return<br/>
-              visit(node)-ie answer.push(node.val) <br/>
-              preOrder(node.left)  //recursion<br/>
-              preOrder(node.right) // magic :)<br/>
+              let preOrder=function(node) <br />
+              if node==null then return
+              <br />
+              visit(node)-ie answer.push(node.val) <br />
+              preOrder(node.left) //recursion
+              <br />
+              preOrder(node.right) // magic :)
+              <br />
             </code>
-            <br/>
+            <br />
             time complexity O(n)
             <h5>
-              In-order
+              In-order -
               <br />
+            </h5>
+            1.traverse left
+            <br />
+            2.Visit node <br />
+            3.traverse right <br />
+            Use recursion to solve these problems:
+            <br />
+            <code>
+              let preOrder=function(node) <br />
+              if node==null then return
+              <br />. preOrder(node.left) //recursion
+              <br />
+              visit(node)-ie answer.push(node.val) <br />
+              preOrder(node.right) // magic :)
+              <br />
+            </code>
+            <br />
+            <h5>
               Post-order
               <br />
             </h5>
