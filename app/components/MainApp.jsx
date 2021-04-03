@@ -6,7 +6,8 @@ const LinkedList = require("./DataStructures/LinkedList");
 const DynamicProgramming = require("./Algorithms/DynamicProgramming");
 const RandomPointInCircle = require("./CodingChallenges/RandomPointInCircle");
 const DepthFirstSearch = require("./Algorithms/DepthFirstSearch");
-
+const BreadthFirstSearch = require("./Algorithms/BreadthFirstSearch");
+const styles = require("../index.css");
 /* the main page for the index route of this app */
 class MainApp extends React.Component {
   constructor(props) {
@@ -46,9 +47,10 @@ class MainApp extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div id="divOne">
+        <div id="div2">React.js N</div>
         <center>
-          <h1>React App</h1>
+          <h1>Coding Challenge Summary: React App</h1>
 
           <h2> React Components added for each: </h2>
         </center>
@@ -72,8 +74,9 @@ class MainApp extends React.Component {
             handleDp={e => this.handleDp(e)}
           />
           <DepthFirstSearch />
+          <BreadthFirstSearch />
         </div>
-        <div class="orange">
+        <div className="orange">
           <RandomPointInCircle />
         </div>
       </div>

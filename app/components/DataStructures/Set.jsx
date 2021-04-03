@@ -1,4 +1,5 @@
 const React = require("react");
+//const styles = require(".../index.css");
 
 const Set = function(props) {
   return (
@@ -9,7 +10,7 @@ const Set = function(props) {
       <br />
       <button onClick={e => props.handleSet(e)}>Click Me</button>
       {props.showSet ? (
-        <div>
+        <div class="pink">
           <h3>Constructor:</h3>
           let mySet = new Set(); It has the following <strong>methods:</strong>
           <br />
