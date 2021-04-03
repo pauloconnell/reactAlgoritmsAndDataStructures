@@ -23,7 +23,7 @@ button {
   font-weight: 500;
   margin-bottom: 1em;
   margin-top: 1em;
-  padding: .5em;
+  padding: 0.5em;
   width: 100%;
   transition: border-color, background-color 300ms ease-in-out;
 }
@@ -39,7 +39,19 @@ button:hover {
 button:active {
   background-color: #00006D;
 }
+.pink {
+  background-color: #FF69B4;
+}
 
 .orange {
   background-color: orange;
+}
+#divOne {
+  background-color: blue;
+}
+#div2 {
+  background-color: blue;
+}
+.dfs {
+  background-color: blue;
 }

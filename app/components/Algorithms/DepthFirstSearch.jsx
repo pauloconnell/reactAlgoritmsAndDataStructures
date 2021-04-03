@@ -1,4 +1,5 @@
 const React = require("react");
+//const styles = require("./index.css");
 
 class DepthFirstSearch extends React.Component {
   constructor(props) {
@@ -35,10 +36,10 @@ class DepthFirstSearch extends React.Component {
         </button>
         {this.state.showThis}
         {this.state.showThis ? (
-          <div>
+          <div id="dfs">
             <center>
               <h3>Depth First Search:</h3>
-              Associated with
+              Associated with using a Stack...but we will use recursion instead
               <h4>Used for Binary Tree traversals</h4>
             </center>
             <h5>
@@ -49,7 +50,7 @@ class DepthFirstSearch extends React.Component {
             2.traverse left
             <br />
             3.traverse right <br />
-            Use recursion to solve these problems:
+            Use recursion to solve these problems. ie traverse = recursive call
             <br />
             <code>
               let preOrder=function(node) <br />
@@ -88,9 +89,27 @@ class DepthFirstSearch extends React.Component {
               <br />
             </h5>
             <div>
+              1.traverse left <br />
+              2.traverse right <br />
+              3.Visit node <br />
+              Use recursion to solve these problems:
+              <br />
+              <code>
+                let postOrder=function(node)
+                <br />
+                if (node==null) return;
+                <br />
+                postOrder(node.left) //recursion
+                <br />
+                postOrder(node.right) // magic :)
+                <br />
+                answer.push(node.val) <br />
+              </code>
+              <br />
+              time complexity O(n)
               <br />
               <figure>
-                <figcaption>Depth First Search</figcaption>
+                <figcaption></figcaption>
                 <pre>
                   <code>
                     <br />
