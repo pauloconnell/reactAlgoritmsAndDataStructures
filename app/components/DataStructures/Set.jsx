@@ -1,5 +1,5 @@
 const React = require("react");
-//const styles = require(".../index.css");
+//const styles = require(".../index.css");  CSS Loaders in package.json :)
 
 const Set = function(props) {
   return (

@@ -39,8 +39,8 @@ class BreadthFirstSearch extends React.Component {
           <div id="dfs">
             <center>
               <h3>Breadth First Search:</h3>
-              Associated with using a Queue(aka Stack) and finding shortest
-              Path, slower than DFS.
+              Associated with using a Queue, and finding shortest
+              Path problems, slower than DFS.
               <h4>Used for Binary Tree traversals</h4>
             </center>
 
@@ -51,15 +51,15 @@ class BreadthFirstSearch extends React.Component {
               <br />
               1) add current node to output
               <br />
-              2) add children(or UNVISITED adjacent node) to queue
+              2) add children(or UNVISITED adjacent nodes) to queue
               <br />
-              3) mark current node as visited(possibly use if
-              output.indexof(x)!=-1)
+              3) mark current node as visited(possibly use 
+              output.indexof(x)!=-1 =Not Visited)
               <br />
-              4) pop next off queue - becomes current node and begin algorithm
+              4) pop next from queue - becomes current node and begin algorithm
               again
               <br />
-              5) if queue is empty, then we are done
+              5) if queue is empty, then we are done (return output)
               <br />
             </p>
 
