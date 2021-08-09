@@ -18,13 +18,13 @@ button {
   border-radius: 0;
   box-sizing: border-box;
   color: #ffffff;
-  display: block;
+  display: inlineBlock;
   font-size: 2em;
   font-weight: 500;
   margin-bottom: 1em;
   margin-top: 1em;
   padding: 0.5em;
-  width: 100%;
+  width: auto;
   transition: border-color, background-color 300ms ease-in-out;
 }
 
@@ -47,7 +47,7 @@ button:active {
   background-color: orange;
 }
 #divOne {
-  background-color: blue;
+  background-color: purple;
 }
 #div2 {
   background-color: blue;

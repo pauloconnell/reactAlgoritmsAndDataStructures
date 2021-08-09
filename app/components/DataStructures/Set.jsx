@@ -1,5 +1,5 @@
 const React = require("react");
-//const styles = require(".../index.css");
+//const styles = require(".../index.css");  CSS Loaders in package.json :)
 
 const Set = function(props) {
   return (
@@ -8,7 +8,7 @@ const Set = function(props) {
       <h1>Set</h1>
       <b>Set is like an array but with NO duplicate elements.</b>
       <br />
-      <button onClick={e => props.handleSet(e)}>Click Me</button>
+      <button onClick={e => props.handleSet(e)}>Set Details:</button>
       {props.showSet ? (
         <div class="pink">
           <h3>Constructor:</h3>
