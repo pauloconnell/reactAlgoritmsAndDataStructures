@@ -32,7 +32,7 @@ class BreadthFirstSearch extends React.Component {
             console.log("clicked", e.target);
           }}
         >
-          Click Me
+          Breadth First Search Details:
         </button>
         {this.state.showThis}
         {this.state.showThis ? (

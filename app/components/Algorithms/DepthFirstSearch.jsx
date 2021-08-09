@@ -32,7 +32,7 @@ class DepthFirstSearch extends React.Component {
             console.log("clicked", e.target);
           }}
         >
-          Click Me
+          DepthFirstSearch Details:
         </button>
         {this.state.showThis}
         {this.state.showThis ? (

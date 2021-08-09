@@ -48,7 +48,7 @@ class MainApp extends React.Component {
   render() {
     return (
       <div id="divOne">
-        <div id="div2">React.js N</div>
+        <div id="div2"></div>
         <center>
           <h1>Coding Challenge Summary: React App</h1>
 
