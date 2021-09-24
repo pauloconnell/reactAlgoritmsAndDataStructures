@@ -39,6 +39,11 @@ button:hover {
 button:active {
   background-color: #00006D;
 }
+
+.center {
+  text-align:center;
+}
+
 .pink {
   background-color: #FF69B4;
 }

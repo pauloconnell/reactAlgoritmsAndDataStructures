@@ -77,7 +77,7 @@ class DepthFirstSearch extends React.Component {
             <code>
               let preOrder=function(node) <br />
               if node==null then return
-              <br />. preOrder(node.left) //recursion
+              <br /> preOrder(node.left) //recursion
               <br />
               visit(node)-ie answer.push(node.val) <br />
               preOrder(node.right) // magic :)
@@ -108,6 +108,9 @@ class DepthFirstSearch extends React.Component {
               <br />
               time complexity O(n)
               <br />
+              <div className="center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif"></img>
+              </div>
               <figure>
                 <figcaption></figcaption>
                 <pre>
