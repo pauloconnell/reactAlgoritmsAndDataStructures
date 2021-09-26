@@ -57,10 +57,10 @@ class DepthFirstSearch extends React.Component {
               if node==null then return
               <br />
               visit(node)-ie answer.push(node.val) <br />
-              preOrder(node.left) //recursion
+              preOrder(node.left) //recursive call to left solve left side
               <br />
-              preOrder(node.right) // magic :)
-              <br />
+              preOrder(node.right)  
+              <br /> 
             </code>
             <br />
             time complexity O(n)

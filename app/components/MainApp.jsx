@@ -3,11 +3,13 @@ const UnorderedList = require("./UnorderedList");
 const Set = require("./DataStructures/Set");
 const Array = require("./DataStructures/Array");
 const LinkedList = require("./DataStructures/LinkedList");
+const BinaryTree = require("./DataStructures/BinaryTree");
 const DynamicProgramming = require("./Algorithms/DynamicProgramming");
 const RandomPointInCircle = require("./CodingChallenges/RandomPointInCircle");
 const DepthFirstSearch = require("./Algorithms/DepthFirstSearch");
 const BreadthFirstSearch = require("./Algorithms/BreadthFirstSearch");
 const styles = require("../index.css");
+
 /* the main page for the index route of this app */
 class MainApp extends React.Component {
   constructor(props) {
@@ -23,8 +25,6 @@ class MainApp extends React.Component {
     this.handleLinkedList = this.handleLinkedList.bind(this);
     this.handleDp = this.handleDp.bind(this);
   }
-
-  componentDidMount() {}
 
   handleSet(e) {
     console.log("array pressed");
@@ -67,6 +67,7 @@ class MainApp extends React.Component {
             showLinkedList={this.state.showLinkedList}
             handleLinkedList={e => this.handleLinkedList(e)}
           />
+          <BinaryTree />
         </div>
         <div style={{ backgroundColor: "green" }}>
           <DynamicProgramming
