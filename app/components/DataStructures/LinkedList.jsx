@@ -2,21 +2,24 @@ const React = require("react");
 
 const LinkedList = function(props) {
   return (
-    <div>
+    <div className="text">
       <h2> Data Structure:</h2>
       <h1>Linked List</h1>
-      <b>
-        Linked list is like an array but with no quick .index or [index] access
-      </b>
-      Instead there is a Head node, middle nodes and Tail node. Each node has
-      Node.val, Node.next -which points to the next location of the linked list
-      the Tail has .next===null
+      <div className="text">
+        <b>
+          Linked list is like an array but with no quick .index or [index]
+          access
+        </b>
+        Instead there is a Head node, middle nodes and Tail node. Each node has
+        Node.val, Node.next -which points to the next location of the linked
+        list the Tail has .next===null
+      </div>
       <br />
       <button onClick={e => props.handleLinkedList(e)}>
         Linked List Details:
       </button>
       {props.showLinkedList ? (
-        <div>
+        <div className="text">
           <h3>Convergance of 2 linked lists:</h3>
           <pre>
             <code>var getIntersectionNode = function(headA, headB)</code>

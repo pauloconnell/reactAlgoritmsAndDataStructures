@@ -20,7 +20,7 @@ class DepthFirstSearch extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="text">
         <h2> Algorithm</h2>
         <h1>Depth First Search</h1>
         <h2>DFS</h2>

@@ -4,7 +4,7 @@ const DynamicProgramming = function(props) {
   let code = "{ a - b}"; // curly brackets cause problems in JSX, so just use variable
 
   return (
-    <div>
+    <div className="text">
       <h2> Algorithm:</h2>
       <h1>Dynamic Programming</h1>
       <h2>finding least number of coins</h2>

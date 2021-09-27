@@ -20,36 +20,39 @@ class BinaryTree extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="text">
         <h2> Data Structure:</h2>
         <h1>Binary Tree</h1>
-        <b>
-          <i className="text">
-            “In computer science, a binary tree is a tree data structure in
-            which each node has at the most two children, which are referred to
-            as the left child and the right child.” — Wikipedia
-          </i>
-          <br />
-          <br />
-        </b>
+        <div>
+          <b>
+            <i>
+              “In computer science, a binary tree is a tree data structure in
+              which each node has at the most two children, which are referred
+              to as the left child and the right child.” — Wikipedia
+            </i>
+            <br />
+            <br />
+          </b>
 
-        <br />
-        <button onClick={e => this.handleClick(e)}>Binary Tree Details:</button>
-        {this.showThis ? (
+          <br />
+          <button onClick={e => this.handleClick(e)}>
+            Binary Tree Details:
+          </button>
+        </div>
+        {this.state.showThis ? (
           <div>
             <h3>Ordering Binary trees </h3>
-            <pre>
-              <code>Pre-Order, In-Order, or Post-Order Traversal</code>
-              <br />
-              Knowing which order the tree is traversed allows visualization of
-              binary tree structures represented in array form.
-              <br />
-              <code>
-                <pre></pre>
-              </code>
-              <br />
-            </pre>
-            <br></br>
+            <code>
+              Pre-Order, In-Order, or Post-Order Traversal defines how the graph
+              is translated to an array
+            </code>
+            <br />
+            <br />
+            Depending on which order of traversal is used, the indexes of the
+            array represent coresponding nodes of the graph.
+            <br />
+            <code></code>
+            <br />
           </div>
         ) : (
           `Click button to show details`
