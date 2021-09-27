@@ -5,21 +5,24 @@ const Array = function(props) {
   let leftBracket = "{";
   let rightBracket = "}";
   return (
-    <div>
+    <div className="text">
       <h2> Data Structure:</h2>
       <h1>Array</h1>
-      <h2>Sorting</h2>
-      <b>
-        array.sort() and array.reverse() are provided for numerical sort.
+    
+        <h2>Sorting</h2>
+        <b>
+          array.sort() and array.reverse() are provided for numerical sort.
+          <br />
+          For string operation,(based on first letter of word) to sort items of
+          [] myArray, include a function as follows: myArray.sort(function(a,
+          b)b - a); OR a-b for reverse order
+        </b>
+
         <br />
-        For string operation,(based on first letter of word) to sort items of []
-        myArray, include a function as follows: myArray.sort(function(a, b)b -
-        a); OR a-b for reverse order
-      </b>
-      <br />
-      <button onClick={e => props.handleArray(e)}>
-        Array Sorting Details:
-      </button>
+        <button onClick={e => props.handleArray(e)}>
+          Array Sorting Details:
+        </button>
+      
       {props.showArray ? (
         <div>
           <h3>Alphabetical sort:</h3>

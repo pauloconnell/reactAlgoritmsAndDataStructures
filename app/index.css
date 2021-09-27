@@ -1,5 +1,5 @@
 body {
-  padding: 1em;
+  padding: 1px;
 }
 
 h1 {
@@ -41,11 +41,19 @@ button:active {
 }
 
 .center {
-  text-align:center;
+  text-align: center;
 }
 
 .pink {
   background-color: #FF69B4;
+}
+
+.text {
+  background-color: grey;
+  max-width: 80%;
+  line-height: 1.4;
+  word-spacing: 1.1;
+  margin: 20px auto 10px;
 }
 
 .orange {

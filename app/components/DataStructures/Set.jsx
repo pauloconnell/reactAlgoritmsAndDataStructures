@@ -3,7 +3,7 @@ const React = require("react");
 
 const Set = function(props) {
   return (
-    <div>
+    <div className="text">
       <h2> Data Structure:</h2>
       <h1>Set</h1>
       <b>Set is like an array but with NO duplicate elements.</b>

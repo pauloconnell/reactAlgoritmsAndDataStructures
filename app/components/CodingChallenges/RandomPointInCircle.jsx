@@ -22,11 +22,13 @@ class RandomPointInCircle extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="text">
         <h2> Coding Challenge</h2>
         <h1>Random point in circle</h1>
-        <h2>Given radius, x_center, y_center</h2>
-        Return a random generated point in this circle
+        <div className="text">
+          <h2>Given radius, x_center, y_center</h2>
+          Return a random generated point in this circle
+        </div>
         <br />
         <button
           onClick={e => {

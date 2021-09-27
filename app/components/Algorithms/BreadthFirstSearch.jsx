@@ -20,7 +20,7 @@ class BreadthFirstSearch extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="text">
         <h2> Algorithm</h2>
         <h1>Breadth First Search</h1>
         <h2>BFS</h2>

@@ -20,7 +20,7 @@ class DepthFirstSearch extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="text">
         <h2> Algorithm</h2>
         <h1>Depth First Search</h1>
         <h2>DFS</h2>
@@ -57,10 +57,10 @@ class DepthFirstSearch extends React.Component {
               if node==null then return
               <br />
               visit(node)-ie answer.push(node.val) <br />
-              preOrder(node.left) //recursion
+              preOrder(node.left) //recursive call to left solve left side
               <br />
-              preOrder(node.right) // magic :)
-              <br />
+              preOrder(node.right)  
+              <br /> 
             </code>
             <br />
             time complexity O(n)
