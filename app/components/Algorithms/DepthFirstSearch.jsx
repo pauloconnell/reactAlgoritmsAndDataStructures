@@ -26,7 +26,12 @@ class DepthFirstSearch extends React.Component {
         <h2>DFS</h2>
         Depth First means to drill down as deep as possible, then backtrack
         <br />
+        <div className="big">
+          There are 3 possible ways to perform DFS traversal - PreOrder
+          InOrder(which is actually BFS) and PostOrder
+        </div>
         <button
+          title="Click button to show details"
           onClick={e => {
             this.handleClick();
             console.log("clicked", e.target);
@@ -36,7 +41,7 @@ class DepthFirstSearch extends React.Component {
         </button>
         {this.state.showThis}
         {this.state.showThis ? (
-          <div id="dfs">
+          <div id="dfs" className="blue">
             <center>
               <h3>Depth First Search:</h3>
               Associated with using a Stack...but we will use recursion instead
@@ -59,8 +64,8 @@ class DepthFirstSearch extends React.Component {
               visit(node)-ie answer.push(node.val) <br />
               preOrder(node.left) //recursive call to left solve left side
               <br />
-              preOrder(node.right)  
-              <br /> 
+              preOrder(node.right)
+              <br />
             </code>
             <br />
             time complexity O(n)
@@ -124,7 +129,7 @@ class DepthFirstSearch extends React.Component {
             <br />
           </div>
         ) : (
-          `Click button to show details`
+          <div>`Click button to show details`</div>
         )}
       </div>
     );

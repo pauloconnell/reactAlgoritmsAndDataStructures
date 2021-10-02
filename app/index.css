@@ -39,11 +39,24 @@ button:hover {
 button:active {
   background-color: #00006D;
 }
-
+.big {
+  font-size: 1.9em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.blue {
+  background-color: DodgerBLue;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 20px;
+}
 .center {
   text-align: center;
 }
 
+.orange {
+  background-color: orange;
+}
 .pink {
   background-color: #FF69B4;
 }
@@ -51,19 +64,21 @@ button:active {
 .text {
   background-color: grey;
   max-width: 80%;
+  margin: 15px auto;
   line-height: 1.4;
   word-spacing: 1.1;
-  margin: 20px auto 10px;
 }
 
-.orange {
-  background-color: orange;
+.width95 {
+  width: 95%;
+  margin: 15px auto;
 }
+
 #divOne {
   background-color: purple;
-}
-#div2 {
-  background-color: blue;
+  width: 100%;
+  text-align: center;
+  margin: 15px auto;
 }
 .dfs {
   background-color: blue;

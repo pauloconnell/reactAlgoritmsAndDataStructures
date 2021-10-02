@@ -10,11 +10,14 @@ const DynamicProgramming = function(props) {
       <h2>finding least number of coins</h2>
 
       <br />
-      <button onClick={e => props.handleDp(e)}>
+      <button
+        title="Click button to show details"
+        onClick={e => props.handleDp(e)}
+      >
         Dynamic Programming Details:
       </button>
       {props.showDp ? (
-        <div>
+        <div className="blue">
           <h3>Dynamic Programming:</h3>
           <h4>
             Mixture of Mathematics and Computer Science
@@ -66,7 +69,7 @@ const DynamicProgramming = function(props) {
           <br />
         </div>
       ) : (
-        `Click button to show details`
+        <div>`Click button to show details`</div>
       )}
     </div>
   );
