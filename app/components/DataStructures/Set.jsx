@@ -8,9 +8,14 @@ const Set = function(props) {
       <h1>Set</h1>
       <b>Set is like an array but with NO duplicate elements.</b>
       <br />
-      <button onClick={e => props.handleSet(e)}>Set Details:</button>
+      <button
+        title="Click button to show details"
+        onClick={e => props.handleSet(e)}
+      >
+        Set Details:
+      </button>
       {props.showSet ? (
-        <div class="pink">
+        <div class="blue">
           <h3>Constructor:</h3>
           let mySet = new Set(); It has the following <strong>methods:</strong>
           <br />
@@ -37,7 +42,7 @@ const Set = function(props) {
           <br></br>
         </div>
       ) : (
-        `Click button to show details`
+       <div> `Click button to show details`</div>
       )}
     </div>
   );

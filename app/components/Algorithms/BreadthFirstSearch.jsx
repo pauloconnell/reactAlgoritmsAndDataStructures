@@ -25,8 +25,10 @@ class BreadthFirstSearch extends React.Component {
         <h1>Breadth First Search</h1>
         <h2>BFS</h2>
         Breadth First means to load up all options at each level of the tree
+        <div className="big">This is the same as an IN ORDER Traversal</div>
         <br />
         <button
+          title="Click button to show details"
           onClick={e => {
             this.handleClick();
             console.log("clicked", e.target);
@@ -36,11 +38,11 @@ class BreadthFirstSearch extends React.Component {
         </button>
         {this.state.showThis}
         {this.state.showThis ? (
-          <div id="dfs">
+          <div id="dfs" className="blue">
             <center>
               <h3>Breadth First Search:</h3>
-              Associated with using a Queue, and finding shortest Path problems,
-              slower than DFS.
+              The iterative solution is Associated with using a Queue, and
+              finding shortest Path problems, slower than DFS.
               <h4>Used for Binary Tree traversals</h4>
             </center>
 
@@ -64,6 +66,31 @@ class BreadthFirstSearch extends React.Component {
               <div className="center">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Animated_BFS.gif" />
               </div>
+              <code>
+                Recursive solution:
+                <br />
+                var result=[]; <br />
+                var post=function(node)&#123;
+                <br />
+                if(!node) return;
+                <br />
+                if(node.left)&#123; <br />
+                post(node.left); &#121;
+                <br />
+                if(node.right)&#123; <br />
+                post(node.right); &#121;
+                <br />
+                result.push(node.val); <br />
+                &#121;
+                <br />
+                post(root);
+                <br />
+                &#121;
+                <br />
+                return result;
+                <br />
+                Iterative solution:
+              </code>
             </p>
 
             <figure>
@@ -77,7 +104,7 @@ class BreadthFirstSearch extends React.Component {
             </figure>
           </div>
         ) : (
-          `Click button to show details`
+          <div>`Click button to show details`</div>
         )}
       </div>
     );

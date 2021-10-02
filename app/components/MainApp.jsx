@@ -47,29 +47,35 @@ class MainApp extends React.Component {
   }
   render() {
     return (
-      <div id="divOne">
-        <div id="div2"></div>
-        <center>
-          <h1>Coding Challenge Summary: React App</h1>
+      <div id="divOne" className="center">
+        <h1>Coding Challenge Summary: React App</h1>
 
-          <h2> React Components added for each: </h2>
-        </center>
-        <div style={{ backgroundColor: "lightBlue" }}>
-          <Set
-            showSet={this.state.showSet}
-            handleSet={e => this.handleSet(e)}
-          />
-          <Array
-            showArray={this.state.showArray}
-            handleArray={e => this.handleArray(e)}
-          />
-          <LinkedList
-            showLinkedList={this.state.showLinkedList}
-            handleLinkedList={e => this.handleLinkedList(e)}
-          />
-          <BinaryTree />
+        <h2> React Components explain data Structure / Algorithms </h2>
+
+        <div
+          className="width95 center"
+          style={{ backgroundColor: "lightBlue" }}
+        >
+          <div className="big center">Data Structures</div>
+          <div className="center">
+            <Set
+              showSet={this.state.showSet}
+              handleSet={e => this.handleSet(e)}
+            />
+            <Array
+              showArray={this.state.showArray}
+              handleArray={e => this.handleArray(e)}
+            />
+            <LinkedList
+              showLinkedList={this.state.showLinkedList}
+              handleLinkedList={e => this.handleLinkedList(e)}
+            />
+            <BinaryTree />
+          </div>
         </div>
-        <div style={{ backgroundColor: "green" }}>
+
+        <div className="width95" style={{ backgroundColor: "green" }}>
+          <div className="center big">Algorithms</div>
           <DynamicProgramming
             showDp={this.state.showDp}
             handleDp={e => this.handleDp(e)}
@@ -77,7 +83,8 @@ class MainApp extends React.Component {
           <DepthFirstSearch />
           <BreadthFirstSearch />
         </div>
-        <div className="orange">
+        <div className="orange width95">
+          <div className="center big">Code Challenge</div>
           <RandomPointInCircle />
         </div>
       </div>

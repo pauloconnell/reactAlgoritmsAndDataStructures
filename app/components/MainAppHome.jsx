@@ -9,6 +9,36 @@ const DepthFirstSearch = require("./Algorithms/DepthFirstSearch");
 const BreadthFirstSearch = require("./Algorithms/BreadthFirstSearch");
 const styles = require("../index.css");
 /* the main page for the index route of this app */
+
+
+
+
+
+
+
+
+//   MainApp   is the one being used
+
+// note this is an alternative layout I was considering, but will likely delete this component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class MainAppHome extends React.Component {
   constructor(props) {
     super(props);

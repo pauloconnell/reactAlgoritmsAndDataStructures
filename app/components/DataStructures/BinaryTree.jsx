@@ -35,12 +35,15 @@ class BinaryTree extends React.Component {
           </b>
 
           <br />
-          <button onClick={e => this.handleClick(e)}>
+          <button
+            title="Click button to show details"
+            onClick={e => this.handleClick(e)}
+          >
             Binary Tree Details:
           </button>
         </div>
         {this.state.showThis ? (
-          <div>
+          <div className="blue">
             <h3>Ordering Binary trees </h3>
             <code>
               Pre-Order, In-Order, or Post-Order Traversal defines how the graph
@@ -55,7 +58,7 @@ class BinaryTree extends React.Component {
             <br />
           </div>
         ) : (
-          `Click button to show details`
+          <div>Click button to show details</div>
         )}
       </div>
     );
